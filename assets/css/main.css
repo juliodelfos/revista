@@ -74,27 +74,107 @@ th {
   padding: 0;
 }
 
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem 2rem;
+  padding: 2rem 4rem 0 4rem;
+  /* Sidebar */
+  /* Newsletter */
+}
+.main__noticia {
+  height: auto;
+}
+.main__titular {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+}
+.main__img {
+  height: 27rem;
+  width: 100%;
+  object-fit: cover;
+}
+.main__bajada {
+  font-size: 1rem;
+}
+.main__sidebar {
+  height: auto;
+  grid-row: span 2;
+}
+.main__sidebar-hr-contain {
+  padding: 1rem 1rem;
+}
+.main__sidebar-hr {
+  border: 0.5px solid black;
+}
+.main__tags-contain {
+  text-align: center;
+}
+.main__tags {
+  padding: 2px 4px;
+  background-color: steelblue;
+  margin-right: 1px;
+  color: white;
+}
+.main__sidebar-destacados {
+  padding-bottom: 0.5rem;
+}
+.main__sidebar-img-contain {
+  padding-bottom: 0.5rem;
+}
+.main__sidebar-img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+.main__newsletter {
+  background-color: #f2f4f5;
+  height: auto;
+  grid-column: span 4;
+  text-align: center;
+  padding: 2rem 0;
+}
+.main__newsletter-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+.main__input-bt {
+  padding-top: 0.8rem;
+}
+.main__newsletter-input {
+  border-radius: 0;
+  border: none;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+.main__newsletter-bt {
+  background-color: coral;
+  color: white;
+  border: none;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+
 /* Navigation */
 .nav {
-  width: 100vw;
-  height: 8vh;
-  color: black;
-  list-style-type: none;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.nav__main {
-  padding: 0.8rem 10rem;
-  background-color: #fff;
+  display: grid;
+  grid-template-columns: 70% 1fr;
   border-bottom: 1px solid black;
+  height: auto;
+  padding: 1rem 4rem;
 }
-.nav__logo {
-  font-size: 3rem;
+.nav__title {
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 0.5rem;
+  font-size: 2rem;
+}
+.nav__uno {
+  text-transform: uppercase;
+}
+.nav__dos {
+  margin-left: auto;
+  text-transform: uppercase;
 }
 .nav__menu {
   text-align: center;
@@ -108,14 +188,6 @@ th {
 }
 .nav__link:visited {
   color: black;
-}
-.nav__button {
-  border: 1px solid #c75858;
-  border-radius: 5%;
-  color: #fff;
-  background-color: #c75858;
-  padding: 0.5rem;
-  font-size: 1rem;
 }
 .nav__item--search {
   border: 1px solid black;
