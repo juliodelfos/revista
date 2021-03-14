@@ -43,10 +43,11 @@
         text-align: center;
     }
     &__tags {
-        padding: 2px 4px;
+        padding: 2px 15px;
         background-color: steelblue;
         margin-right: 1px;
         color: white;
+        border-radius: 15px;
     }
     &__sidebar-destacados {
         padding-bottom: 0.5rem;
