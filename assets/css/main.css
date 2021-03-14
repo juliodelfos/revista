@@ -74,13 +74,16 @@ th {
   padding: 0;
 }
 
+* {
+  font-family: "Open Sans";
+}
+
 .main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem 2rem;
-  padding: 2rem 4rem 0 4rem;
+  padding: 2rem 4rem;
   /* Sidebar */
-  /* Newsletter */
 }
 .main__noticia {
   height: auto;
@@ -128,34 +131,6 @@ th {
   width: 100%;
   object-fit: cover;
 }
-.main__newsletter {
-  background-color: #f2f4f5;
-  height: auto;
-  grid-column: span 4;
-  text-align: center;
-  padding: 2rem 0;
-}
-.main__newsletter-title {
-  font-weight: bold;
-  font-size: 1.6rem;
-  padding-bottom: 1rem;
-}
-.main__input-bt {
-  padding-top: 0.8rem;
-}
-.main__newsletter-input {
-  border-radius: 0;
-  border: none;
-  font-size: 13px;
-  padding: 5px 10px;
-}
-.main__newsletter-bt {
-  background-color: coral;
-  color: white;
-  border: none;
-  font-size: 13px;
-  padding: 5px 10px;
-}
 
 /* Navigation */
 .nav {
@@ -164,27 +139,24 @@ th {
   border-bottom: 1px solid black;
   height: auto;
   padding: 1rem 4rem;
+  align-items: center;
 }
 .nav__title {
   font-weight: bold;
   font-size: 2rem;
 }
-.nav__uno {
+.nav__brand {
   text-transform: uppercase;
 }
-.nav__dos {
+.nav__list {
   margin-left: auto;
   text-transform: uppercase;
 }
-.nav__menu {
-  text-align: center;
-}
-.nav__item {
-  display: inline-block;
-}
 .nav__link {
   text-decoration: none;
-  padding: 0 2rem;
+}
+.nav__link--padding {
+  padding: 0 0.5rem;
 }
 .nav__link:visited {
   color: black;
@@ -192,6 +164,36 @@ th {
 .nav__item--search {
   border: 1px solid black;
   display: inline-block;
+}
+
+/* Newsletter */
+.newsletter {
+  display: grid;
+  background-color: #f2f4f5;
+  height: auto;
+  text-align: center;
+  padding: 2rem 0;
+}
+.newsletter__title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+.newsletter__input-bt {
+  padding-top: 0.8rem;
+}
+.newsletter__input {
+  border-radius: 0;
+  border: none;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+.newsletter__bt {
+  background-color: coral;
+  color: white;
+  border: none;
+  font-size: 13px;
+  padding: 5px 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+/* Newsletter */
+
+.newsletter {
+    display: grid;
+    // grid-template-columns: 100vw;
+    background-color: #f2f4f5;
+    height: auto;
+    text-align: center;
+    padding: 2rem 0;
+&__title {
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+&__input-bt {
+    padding-top: 0.8rem;
+}
+&__input {
+    border-radius: 0;
+    border: none;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+&__bt {
+    background-color: coral;
+    color: white;
+    border: none;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+}

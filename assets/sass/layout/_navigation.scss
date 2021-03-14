@@ -6,30 +6,24 @@
     border-bottom: 1px solid black;
     height: auto;
     padding: 1rem 4rem;
+    align-items: center;
     &__title {
         font-weight: bold;
         font-size: 2rem;
         // padding-bottom: 0.5rem;
     }
-    &__uno {
+    &__brand {
         text-transform: uppercase;
     }
-    &__dos {
+    &__list {
         margin-left: auto;
         text-transform: uppercase;
     }
-
-    &__menu {
-        text-align: center;
-    }
-    &__list {
-    }
-    &__item {
-        display: inline-block;
-    }
     &__link {
         text-decoration: none;
-        padding: 0 2rem;
+    }
+    &__link--padding {
+        padding: 0 .5rem;
     }
     &__link:visited {
         color: black;

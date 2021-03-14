@@ -1,8 +1,12 @@
+* {
+    font-family: 'Open Sans';
+}
+
 .main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem 2rem;
-    padding: 2rem 4rem 0 4rem;
+    padding: 2rem 4rem;
     &__noticia {
         height: auto;
         // border: 1px solid black;
@@ -58,37 +62,5 @@
         height: 15rem;
         width: 100%;
         object-fit: cover;
-    }
-
-    /* Newsletter */
-
-    &__newsletter {
-        background-color: #f2f4f5;
-        height: auto;
-        // border: 1px solid black;
-        grid-column: span 4;
-        text-align: center;
-        padding: 2rem 0;
-    }
-    &__newsletter-title {
-        font-weight: bold;
-        font-size: 1.6rem;
-        padding-bottom: 1rem;
-    }
-    &__input-bt {
-        padding-top: 0.8rem;
-    }
-    &__newsletter-input {
-        border-radius: 0;
-        border: none;
-        font-size: 13px;
-        padding: 5px 10px;
-    }
-    &__newsletter-bt {
-        background-color: coral;
-        color: white;
-        border: none;
-        font-size: 13px;
-        padding: 5px 10px;
     }
 }
