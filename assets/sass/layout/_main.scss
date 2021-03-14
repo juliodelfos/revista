@@ -9,7 +9,6 @@
     padding: 2rem 4rem;
     &__noticia {
         height: auto;
-        // border: 1px solid black;
     }
     &__titular {
         font-weight: bold;
@@ -31,7 +30,6 @@
 
     &__sidebar {
         height: auto;
-        // border: 1px solid black;
         grid-row: span 2;
     }
     &__sidebar-hr-contain {
@@ -43,8 +41,6 @@
     
     &__tags-contain {
         text-align: center;
-        // padding: 0;
-        // list-style: none;
     }
     &__tags {
         padding: 2px 4px;
