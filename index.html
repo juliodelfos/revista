@@ -4,147 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <title>Desafio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
 <body>
-    <div class="contenedor">
-        <div class="menu">
-            <div class="logo">Diario</div>
-            <div class="nav">
-                <ul>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Contacto</a></li>
-                    <li><input class="input-menu" type="text" name="buscar" placeholder="buscar..." /></li>
-                </ul>
-            </div>
+    <!-- Navbar OK -->
+    <nav class="nav">
+        <div class="nav__brand">
+            <h1 class="nav__title">Diario</h1>
         </div>
-        <div class="contenido">
-            <div class="listad-noticias">
-                <div class="noticia">
-                    <div class="cabecera">
-                        <h2>
-                            Lorem ipsum dolor sit amet,
-                        </h2>
-                    </div>
-                    <div class="cuerpo">
-                        <img src="https://picsum.photos/200/300?random=1" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-                <div class="noticia">
-                    <div class="cabecera">
-                        <h2>
-                            Lorem ipsum dolor sit amet,
-                        </h2>
-                    </div>
-                    <div class="cuerpo">
-                        <img src="https://picsum.photos/200/300?random=2" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-                <div class="noticia">
-                    <div class="cabecera">
-                        <h2>
-                            Lorem ipsum dolor sit amet,
-                        </h2>
-                    </div>
-                    <div class="cuerpo">
-                        <img src="https://picsum.photos/200/300?random=3" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-                <div class="noticia">
-                    <div class="cabecera">
-                        <h2>
-                            Lorem ipsum dolor sit amet,
-                        </h2>
-                    </div>
-                    <div class="cuerpo">
-                        <img src="https://picsum.photos/200/300?random=4" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-                <div class="noticia">
-                    <div class="cabecera">
-                        <h2>
-                            Lorem ipsum dolor sit amet,
-                        </h2>
-                    </div>
-                    <div class="cuerpo">
-                        <img src="https://picsum.photos/200/300?random=5" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </div>
-                <div class="noticia">
-                    <div class="cabecera">
-                        <h2>
-                            Lorem ipsum dolor sit amet,
-                        </h2>
-                    </div>
-                    <div class="cuerpo">
-                        <img src="https://picsum.photos/200/300?random=6" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
+        <div class="nav__list">
+            <span><a href="" class="nav__link">Nosotros</a></span>
+            <span><a href="" class="nav__link nav__link--padding">Contacto</a></span>
+            <span><input type="text" class="" placeholder="Buscar artículo"></li></span>
+        </div>
+    </nav>
+
+    <!-- Noticias section -->
+    <main class="main">
+
+        <div class="main__noticia">
+            <h2 class="main__titular">Titular noticia</h2>
+            <div class="main__img_cont">
+                <img src="https://source.unsplash.com/random/1" alt="" class="main__img">
+            </div>
+            <p class="main__bajada">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit fuga fugit quaerat
+                voluptate cupiditate?</p>
+        </div>
+        <div class="main__noticia">
+            <h2 class="main__titular">Titular noticia</h2>
+            <div class="main__img_cont">
+                <img src="https://source.unsplash.com/random/2" alt="" class="main__img">
+            </div>
+            <p class="main__bajada">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit fuga fugit quaerat
+                voluptate cupiditate?</p>
+        </div>
+        <div class="main__noticia">
+            <h2 class="main__titular">Titular noticia</h2>
+            <div class="main__img_cont">
+                <img src="https://source.unsplash.com/random/3" alt="" class="main__img">
+            </div>
+            <p class="main__bajada">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit fuga fugit quaerat
+                voluptate cupiditate?</p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="main__sidebar">
+            <h2 class="main__titular">Nosotros</h2>
+            <p class="main__bajada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi
+                obcaecati
+                iusto animi nemo a saepe aperiam ad fugit et sunt aspernatur perferendis.</p>
+            <div class="main__sidebar-hr-contain">
+                <hr class="main__sidebar-hr">
+            </div>
+            <h2 class="main__titular">Tags</h2>
+            <div class="main__tags-contain">
+                <span class="main__tags">Viajes</span>
+                <span class="main__tags">Noticias</span>
+                <span class="main__tags">Comida</span>
+            </div>
+            <div class="main__sidebar-hr-contain">
+                <hr class="main__sidebar-hr">
+            </div>
+            <h2 class="main__titular">Destacados</h2>
+            <div class="main__sidebar-destacados">
+                <p class="main__bajada">Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="main__sidebar-img-contain">
+                    <img src="https://source.unsplash.com/random/9" alt="" class="main__sidebar-img">
                 </div>
             </div>
-            <div class="listado-izquierdo">
-                <div class="cabecera-listado">
-                    <h1>Nosotros </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    </p>
+            <div class="main__sidebar-destacados">
+                <p class="main__bajada">Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="main__sidebar-img-contain">
+                    <img src="https://source.unsplash.com/random/10" alt="" class="main__sidebar-img">
                 </div>
-                <div class="tags">
-                    <h1>Tags </h1>
-                    <ul>
-                        <li>Viajes</li>
-                        <li>Noticias</li>
-                        <li>Comida</li>
-                    </ul>
-                </div>
-                <div class="noticias-destacadas">
-                    <h1>Destacados </h1>
-                    <div class="item">
-                        <h4>Lorem ipsum dolor sit amet.</h4>
-                        <img src="https://picsum.photos/200/200?random=7" />
-                    </div>
-                    <div class="item">
-                        <h4>Lorem ipsum dolor sit amet.</h4>
-                        <img src="https://picsum.photos/200/200?random=8" />
-                    </div>
-                    <div class="item">
-                        <h4>Lorem ipsum dolor sit amet.</h4>
-                        <img src="https://picsum.photos/200/200?random=9" />
-                    </div>
+            </div>
+            <div class="main__sidebar-destacados">
+                <p class="main__bajada main__bajada--newsletter">Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="main__sidebar-img-contain">
+                    <img src="https://source.unsplash.com/random/11" alt="" class="main__sidebar-img">
                 </div>
             </div>
         </div>
-        <div class="newsletter">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-            <div class="group">
-                <input type="text" name=""><button>Suscríbete</button>
+
+        <!-- Otra fila -->
+        <div class="main__noticia">
+            <h2 class="main__titular">Titular noticia</h2>
+            <div class="main__img_cont">
+                <img src="https://source.unsplash.com/random/6" alt="" class="main__img">
             </div>
+            <p class="main__bajada">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit fuga fugit quaerat
+                voluptate cupiditate?</p>
         </div>
-        <div class="footer">
-            <p>Todos los derechos reservados</p>
+        <div class="main__noticia">
+            <h2 class="main__titular">Titular noticia</h2>
+            <div class="main__img_cont">
+                <img src="https://source.unsplash.com/random/7" alt="" class="main__img">
+            </div>
+            <p class="main__bajada">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit fuga fugit quaerat
+                voluptate cupiditate?</p>
         </div>
-    </div>
+        <div class="main__noticia">
+            <h2 class="main__titular">Titular noticia</h2>
+            <div class="main__img_cont">
+                <img src="https://source.unsplash.com/random/8" alt="" class="main__img">
+            </div>
+            <p class="main__bajada">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit fuga fugit quaerat
+                voluptate cupiditate?</p>
+        </div>
+    </main>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2 class="newsletter__title">Suscríbete a nuestro boletín</h2>
+        <p class="main__bajada">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div class="newsletter__input-bt">
+            <input type="text" class="newsletter__input">
+            <button class="newsletter__bt">Suscribir</button>
+        </div>
+    </section>
+
 </body>
 
 </html>
